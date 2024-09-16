@@ -1,0 +1,2284 @@
+@media screen {
+html,
+    body,
+    div,
+    span,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    abbr,
+    address,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    samp,
+    small,
+    strong,
+    sub,
+    sup,
+    var,
+    b,
+    i,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    background-color: #f3f3f3;
+    color: #555555;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.moji-kotei {
+    position: relative;
+}
+
+.main-moji {
+    max-width: 100%;
+    z-index: 9998;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    width: clamp(2.688rem, 2.208rem + 2.4vw, 4.125rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-moji img {
+    width: 100%;
+}
+
+.kanazawaya-moji {
+    padding-top: 8px;
+}
+
+.main-moji p {
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 800;
+    font-size: clamp(2.188rem, 1.917rem + 1.35vw, 3rem);
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+
+.kanazawaya-eng {
+    bottom: 3%;
+    right: 3%;
+    position: absolute;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 800;
+    font-size: clamp(0.938rem, 0.75rem + 0.94vw, 1.5rem);
+    letter-spacing: 0.2em;
+    color: #FFF8F8;
+    z-index: 9998;
+}
+
+.header-img {
+    width: 15%;
+    margin: 0;
+    padding-left: 3%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav {
+    margin: 0 0 0 auto;
+    padding-right: 4%;
+}
+
+.menu-item a {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.menu-item a:hover {
+    color: #000000;
+}
+
+.menu-item a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background: #555555;
+    transition: 0.3s;
+}
+
+.menu-item a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.menu-group {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 0 0 50px;
+    font-size: clamp(0.938rem, 0.917rem + 0.1vw, 1rem);
+    font-family: "Noto Serif JP", serif;
+    letter-spacing: 0.3rem;
+}
+
+.menu-item:nth-child(2) {
+    margin: 0 0 0 60px;
+}
+
+.header-default {
+    background-color: #ffffff;
+}
+
+.slider {
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.slider img {
+    object-fit: cover;
+    width: 100%;
+    height: 100dvh;
+}
+
+@keyframes zoomUp {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+        /* 拡大率 */
+    }
+}
+
+.add-animation {
+    animation: zoomUp 10s linear 0s normal both;
+}
+/* ヘッダー */
+
+/* サービスタイトル */
+.service-title {
+    padding: 100px 0 100px 0;
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    letter-spacing: 0.2rem;
+}
+
+.service-title p {
+    font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
+    letter-spacing: 0.2rem;
+}
+
+.service-title h1 {
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+    font-weight: 400;
+}
+/* サービスタイトル */
+
+/* 共通 */
+.service01 {
+    margin-top: 100px;
+}
+
+.service02 {
+    margin-top: 200px;
+}
+
+.service03 {
+    margin-top: 200px;
+}
+
+.service04 {
+    margin-top: 180px;
+}
+
+.service05 {
+    margin-top: 250px;
+}
+
+.service06 {
+    margin: 200px 0 100px 0;
+}
+
+.title {
+    width: 95%;
+    background-color: #e4e4e4;
+    margin: 0 0 0 auto;
+    font-family: "Noto Serif JP", serif;
+    position: relative;
+}
+
+.title p{
+    font-size: clamp(1rem, 0.667rem + 1.67vw, 2rem);
+    font-weight: 400;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.suuji {
+    position: absolute;
+    bottom: 30%;
+    right: 2%;
+    color: #fff;
+}
+
+.suuji p {
+    font-size: clamp(8rem, 5.458rem + 12.71vw, 15.625rem);
+    font-weight: 700;
+    letter-spacing: -0.1em;
+}
+
+.title-moji01 {
+    padding: 50px 0 90px 50px;
+}
+/* 共通 */
+
+/* 事業紹介01 */
+.graph {
+    padding-top: 5%;
+    width: 51%;
+    margin: 0 0 0 auto;
+}
+
+.service01-img {
+    width: 48%;
+    position: absolute;
+    top: -10%;
+    left: 0%;
+}
+
+.slider01 img {
+    object-fit: cover;
+}
+
+.service01-position {
+    position: relative;
+}
+
+.slide-dots01 {
+    width: 85%;
+    text-align: left;
+    margin: 10px;
+
+    li {
+        display: inline-block;
+        margin: 0 2px;
+        width: 20px;
+        height: 5px;
+
+        button {
+            position: relative;
+            text-indent: -9999px;
+
+            &:before {
+                content: '';
+                width: 1px;
+                height: 15px;
+                background: black;
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &.slick-active {
+            button:before {
+                background: black;
+                height: 25px;
+            }
+        }
+    }
+}
+/* 事業紹介01 */
+
+/* 事業紹介02 */
+.position02 {
+    margin-left: -10px !important;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.service02-detail img {
+    object-fit: cover;
+    width: 22px;
+    height: 22px;
+    padding: 10px;
+    padding-right: 25px;
+}
+
+.service02-detail p {
+    font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+    font-family: "Noto Sans JP", serif;
+    margin: auto 0;
+}
+
+.service02-detail {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.title-moji02,.title-moji04 {
+    padding: 50px 0 100px 50px;
+}
+
+.title-moji06 {
+    padding: 50px 0 120px 50px;
+}
+
+.service02-position {
+    width: 35%;
+    margin: -80px 0 0 130px;
+}
+
+.service02-tenpo{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.tenpo01, .tenpo02 {
+    list-style: none;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 15px -10px;
+    transition: 0.5s;
+    margin: 7% 10%;
+}
+
+.tenpo01:hover ,.tenpo02:hover{
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(5px);
+}
+
+.tenpo-img{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.tenpo-img img {
+    transition: transform .6s ease;
+}
+
+.tenpo-img:hover img {
+    transform: scale(1.1);
+}
+
+.tenpo-name {
+    display: flex;
+    font-family: "Noto Sans JP", serif;
+    padding: 2%;
+}
+
+.font28 {
+    font-size: clamp(1.188rem, 1rem + 0.94vw, 1.75rem);
+}
+
+.font16 {
+    font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
+    padding: 15px 0 0 8px;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.arrow::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #000000;
+    border-right: solid 2px #000000;
+    position: absolute;
+    top: 35%;
+}
+
+.arrow.arrow-right::before {
+    transform: rotate(45deg);
+}
+/* 事業紹介02 */
+
+
+/* 事業紹介03 */
+.service03-img {
+    width: 50%;
+    margin: -4% 0 0 0;
+}
+
+.service03 {
+    position: relative;
+}
+
+.service03-position {
+    display: flex;
+}
+              
+.engraph {
+    position: relative;
+    width: 226px;
+    height: 218px;
+    border-radius: 50%;
+    background: conic-gradient(rgba( 253, 209, 15) 0% 85%,
+                rgba(35, 184, 41) 85% 100%
+                 );
+}
+
+.label-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: clamp(1.125rem, 1rem + 0.63vw, 1.5rem);
+    font-family: "Noto Sans JP",serif;
+}
+
+.label-2 {
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    font-size: clamp(1.125rem, 1rem + 0.63vw, 1.5rem);
+    font-family: "Noto Sans JP", serif;
+}
+
+.label-size {
+    font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
+}
+
+.moji01 {
+    font-family: "Noto Sans JP",serif;
+    font-size: clamp(1.25rem, 1.083rem + 0.83vw, 1.75rem);
+    letter-spacing: 0.1em;
+}
+
+.moji02 {
+    font-family: "Noto Sans JP", serif;
+    font-size: clamp(2.25rem, 2.167rem + 0.42vw, 2.5rem);
+    letter-spacing: 0.1em;
+    padding-left: 8px;
+}
+
+.moji03 {
+    font-family: "Noto Sans JP", serif;
+    font-size: clamp(1rem, 0.917rem + 0.42vw, 1.25rem);
+}
+
+.graph-flex {
+    display: flex;
+}
+
+.ishikawa, .nagano {
+    font-family: "Noto Sans JP", serif;
+    font-size:clamp(0.813rem, 0.708rem + 0.52vw, 1.125rem);
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+}
+
+.color01 {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #FDD10F;
+    margin: 10px;
+}
+
+.color02{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #23B829;
+    margin: 10px;
+}
+
+.service03-flex {
+    margin: 3% auto;
+}
+
+.service03-detail {
+    padding-bottom: 6%;
+    text-align: center;
+}
+
+.kyotensuu {
+    padding-top: 15%;
+    padding-left: 5%;
+}
+/* 事業紹介03 */
+
+/* 事業紹介04 */
+.service04-detail p {
+    font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+    font-family: "Noto Sans JP", serif;
+    margin: auto 0;
+}
+
+.service04-detail img {
+    object-fit: cover;
+    width: 22px;
+    height: 22px;
+    padding: 10px;
+    padding-right: 25px;
+}
+
+.service04-detail {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.service04-position {
+    width: 35%;
+    margin: -80px 0 0 130px;
+}
+
+.service04-tenpo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.service04-tenpo a {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.service04-tenpo a:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(5px);
+}
+
+.service04-link {
+    box-shadow: 0px 7px 15px -10px;
+    transition: 0.5s;
+}
+
+.card__img-area img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__title {
+    margin: 10px auto 10px 10px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: clamp(1.125rem, 1.042rem + 0.42vw, 1.375rem);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    line-height: 0.8em;
+}
+
+.text-area {
+    color: #000000;
+}
+
+.card__item {
+    list-style: none;
+}
+
+.card-eng {
+    font-size: clamp(0.688rem, 0.646rem + 0.21vw, 0.813rem);
+    letter-spacing: 0.1em;
+    padding-left: 8px;
+}
+
+.card__img-area {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card__img-area img {
+    transition: transform .6s ease;
+}
+
+.card__img-area:hover img {
+    transform: scale(1.1);
+}
+
+.arrow04 {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow04::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #000000;
+    border-right: solid 2px #000000;
+    position: absolute;
+    top: 78%;
+    bottom: 0;
+    right: 27px;
+    margin: auto;
+}
+
+.arrow04.arrow-right04::before {
+    transform: rotate(45deg);
+}
+/* 事業紹介04 */
+
+/* 事業紹介05 */
+.service05-tenpo {
+    width: 75%;
+    margin: -50px 0 0 80px ;
+}
+
+.service05-tenpo a:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(5px);
+}
+
+.card__img-area05 img {
+    vertical-align: top;
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+}
+
+.card__img-area05 {
+    width: 77%;
+}
+
+.text-area05 {
+    font-family: "Noto Sans JP", sans-serif;
+    width: 23%;
+}
+
+.text-area05 p {
+    font-size: clamp(0.813rem, 0.75rem + 0.31vw, 1rem);
+    letter-spacing: 0.1em;
+}
+
+.motogiku p {
+    font-size: clamp(0.813rem, 0.75rem + 0.31vw, 1rem);
+    letter-spacing: 0em;
+}
+
+.card__title05 {
+    font-size: clamp(1.375rem, 1.25rem + 0.63vw, 1.75rem);
+    letter-spacing: 0.2em;
+}
+
+.card__subtitle {
+    font-size: clamp(0.688rem, 0.625rem + 0.31vw, 0.875rem);
+    letter-spacing: 0.1em;
+}
+
+.card05 h3 {
+    position: absolute;
+    left:79%;
+    bottom: 14%;
+}
+
+.card05 p1 {
+    position: absolute;
+    bottom: 5%;
+    left:79%
+}
+
+.text-area05 p {
+    padding: 20px 10px;
+}
+
+.card__item05 {
+    display: flex;
+}
+
+.service05-link {
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 15px -10px;
+    transition: 0.5s;
+    width: 100%;
+    height: 285px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.arrow05 {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow05::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #000000;
+    border-right: solid 2px #000000;
+    position: absolute;
+    top: 65%;
+    bottom: 0;
+    right: 35px;
+    margin: auto;
+}
+
+.arrow05.arrow-right05::before {
+    transform: rotate(45deg);
+}
+
+.card__img-area05 {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card__img-area05 img {
+    transition: transform .6s ease;
+}
+
+.card__img-area05:hover img {
+    transform: scale(1.1);
+}
+/* 事業紹介05 */
+
+/* 事業紹介06 */
+.service06-img {
+    width: 45%;
+    margin: -170px 0 0 auto;
+    position: relative;
+    z-index: 0;
+}
+
+.service06-img img {
+    margin: -30px 0 0 auto;
+
+}
+
+.service06-position {
+    width: 80%;
+    margin: -80px 0 0 130px;
+    position: relative;
+    z-index: 3;
+}
+
+.service06-detail p {
+    font-size: clamp(0.75rem, 0.625rem + 0.63vw, 1.125rem);
+    font-family: "Noto Sans JP", serif;
+    margin: auto 0;
+}
+
+.service06-detail img {
+    object-fit: cover;
+    width: 22px;
+    height: 22px;
+    padding: 10px;
+    padding-right: 25px;
+}
+
+.service06-detail {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.flex06 {
+    position: relative;
+    z-index: 0;
+}
+
+.service06-button {
+    list-style: none;
+    margin-top: 5%;
+    text-align: right;
+    padding-left: 15%;
+    position: relative;
+    z-index: 5;
+}
+
+.btn06 a {
+    position: relative;
+    display: block;
+    width: 220px;
+    padding: 12px 0;
+    background-color: #f3f3f3;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: clamp(1.063rem, 1rem + 0.31vw, 1.25rem);
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.6;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.btn06 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-top: 2px solid #555555;
+    border-right: 2px solid #555555;
+    transform: rotate(45deg);
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+/* スライドする背景色のスタイル */
+.btn-slide a {
+    border: 1px solid #555555;
+    z-index: 1;
+}
+
+.btn-slide a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #555555;
+    transform-origin: right top;
+    transform: scaleX(0);
+    transition: transform .2s ease;
+    z-index: -1;
+}
+
+/* ホバー時のスタイル */
+.btn-slide a:hover {
+    color: #F3f3f3;
+}
+
+.btn-slide a:hover::before {
+    transform-origin: left top;
+    transform: scaleX(1);
+}
+
+.btn-slide a:hover::after {
+    border-color: #F3f3f3;
+}
+/* 事業紹介06 */
+
+/* 会社紹介 */
+.company {
+    padding-bottom: 150px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#table01 {
+    margin: 0 auto;
+    font-size: clamp(0.688rem, 0.604rem + 0.42vw, 0.938rem);
+    letter-spacing: 0.1em;
+    font-family: "Noto Sans JP", serif;
+}
+
+#table01 tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+#table01 th,
+#table01 td {
+    padding: 24px 40px 24px 0;
+    border: none;
+    font-weight: 400;
+}
+
+#table01 th {
+    width: 45%;
+}
+/* 会社紹介 */
+
+/* フッター */
+.footer {
+    background-color: #9a9a9a;
+    padding: 30px 0 30px 0;
+}
+
+.footer p {
+    text-align: center;
+    font-size: clamp(0.5rem, 0.417rem + 0.42vw, 0.75rem);
+    letter-spacing: 0.15em;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 350;
+    color: #FFFFFF;
+}
+/* フッター */
+
+
+/*========================= splash =======================*/
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0f2350;
+    z-index: 9999999;
+    text-align: center;
+    color: #f3f3f3;
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(1.188rem, 0.854rem + 1.67vw, 2.188rem);
+    font-weight: 600;
+    letter-spacing: 0.3em;
+}
+
+#splash-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+#splash-logo img {
+    width: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+    height: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+    object-fit: cover;
+}
+
+#splash-logo h1 {
+    padding-left: 15px;
+    white-space: nowrap;
+}
+
+/*====== 画面遷移のためのCSS ======*/
+body {
+    background: #0f2350;
+    /*遷移アニメーションと同じ色を指定*/
+}
+
+body.appear {
+    background: #f3f3f3;
+    /*画面を開いた後の背景色を指定*/
+}
+
+/*画面遷移アニメーション*/
+.splashbg1,
+.splashbg2 {
+    display: none;
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear .splashbg1,
+body.appear .splashbg2 {
+    display: block;
+}
+
+/*上に消えるエリア*/
+body.appear .splashbg1 {
+    animation-name: PageAnime;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    content: "";
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100dvh;
+    bottom: 50%;
+    left: 0;
+    transform: scaleY(1);
+    background-color: #0f2350
+    /*伸びる背景色の設定*/
+}
+
+@keyframes PageAnime {
+    0% {
+        transform-origin: top;
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+}
+
+/*下に消えるエリア*/
+body.appear .splashbg2 {
+    animation-name: PageAnime2;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    content: "";
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100dvh;
+    top: 50%;
+    left: 0;
+    transform: scaleY(1);
+    background-color: #0f2350;
+    /*伸びる背景色の設定*/
+}
+
+@keyframes PageAnime2 {
+    0% {
+        transform-origin: bottom;
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform-origin: bottom;
+        transform: scaleY(0);
+    }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+#container {
+    opacity: 0;
+    /*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container {
+    animation-name: PageAnimeAppear;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes PageAnimeAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*========================= splash =======================*/
+
+/*========================= スクロールマーク =======================*/
+/*スクロールダウン全体の場所*/
+.scrolldown4 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    bottom: 1%;
+    right: 50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+    animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove {
+    0% {
+        bottom: 1%;
+    }
+
+    50% {
+        bottom: 3%;
+    }
+
+    100% {
+        bottom: 1%;
+    }
+}
+
+/*Scrollテキストの描写*/
+.scrolldown4 span {
+    /*描画位置*/
+    position: absolute;
+    left: -20px;
+    bottom: 10px;
+    /*テキストの形状*/
+    color: #eee;
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+    /*縦書き設定*/
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #eee;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*矢印の形状*/
+    width: 1px;
+    height: 50px;
+    background: #eee;
+}
+/*========================= スクロールマーク =======================*/
+
+/*========================= フェード =======================*/
+/* 右からふわっと現れる */
+/* jQueryで追加・削除 */
+.fadeInRight {
+    -webkit-animation-name: fadeInRightAnime;
+    animation-name: fadeInRightAnime;
+    /*アニメーションの名前*/
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    /*アニメーションの時間を1秒に設定*/
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    /*アニメーション実行後、要素が表示されたままにする*/
+}
+
+@-webkit-keyframes fadeInRightAnime {
+    0% {
+        opacity: 0;
+        /*非表示*/
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        /*100px分横にずれる*/
+    }
+
+    100% {
+        opacity: 1;
+        /*表示*/
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        /*元の位置*/
+    }
+}
+
+@keyframes fadeInRightAnime {
+    0% {
+        opacity: 0;
+        /*非表示*/
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        /*100px分横にずれる*/
+    }
+
+    100% {
+        opacity: 1;
+        /*表示*/
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        /*元の位置*/
+    }
+}
+
+.fadeInRightTrigger {
+    opacity: 0;
+    /*非表示*/
+}
+
+/* 左からふわっと現れる */
+/* jQueryで追加・削除 */
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeftAnime;
+    animation-name: fadeInLeftAnime;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInLeftAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeftAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeftTrigger {
+    opacity: 0;
+}
+
+/* 下からふわっと現れる */
+
+/* jQueryで追加、削除 */
+.fadeUp {
+    -webkit-animation-name: fadeUpAnime;
+    animation-name: fadeUpAnime;
+    /*アニメーションの名前*/
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    /*アニメーションの実行時間*/
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    /*アニメーション後、要素が表示されたままにする*/
+}
+
+@-webkit-keyframes fadeUpAnime {
+    0% {
+        opacity: 0;
+        /*非表示*/
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        /*縦方向に100pxずらす*/
+    }
+
+    100% {
+        opacity: 1;
+        /*表示*/
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        /*元の位置*/
+    }
+}
+
+@keyframes fadeUpAnime {
+    0% {
+        opacity: 0;
+        /*非表示*/
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        /*縦方向に100pxずらす*/
+    }
+
+    100% {
+        opacity: 1;
+        /*表示*/
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        /*元の位置*/
+    }
+}
+
+.fadeUpTrigger {
+    opacity: 0;
+    /*非表示*/
+}
+/*========================= フェード =======================*/
+
+
+/*========================= splashランダム出現 =======================*/
+.TextRandomAnime span {
+    opacity: 0;
+}
+
+.TextRandomAnime.appearRandomtext span {
+    animation: text_randomanime_on .5s ease-out forwards;
+}
+
+/*アニメーションで透過を0から1に変化させる*/
+@keyframes text_randomanime_on {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.TextRandomAnime.appearRandomtext span:nth-child(2n) {
+    animation-delay: .5s;
+    /* spanのついた2の倍数の文字列の変化を0.5秒遅らせる*/
+}
+
+.TextRandomAnime.appearRandomtext span:nth-child(3n+1) {
+    animation-delay: .15s;
+    /* spanのついた3の倍数＋1の文字列の変化を0.15秒遅らせる*/
+}
+/*========================= splashランダム出現 =======================*/
+}
+
+/*========================= レスポンシブ =======================*/
+@media (min-width: 481px) and (max-width: 960px) {
+.card__title_sp{
+    display: none;
+}
+
+.graph_sp {
+    display: none;
+}
+
+.menu-item {
+    margin: 0 0 0 40px;
+    font-size: 1.3rem;
+    font-family: "Noto Serif JP", serif;
+    letter-spacing: 0.2rem;
+}
+
+.menu-item:nth-child(2) {
+    margin: 0 0 0 40px;
+}
+
+.suuji {
+    position: absolute;
+    top: -55%;
+    right: 2%;
+}
+
+.title-moji04 h1 {
+    letter-spacing: 0em;
+}
+
+.slide-dots01 li {
+    width: 13px;
+    height: 5px;
+}
+
+.service02-detail img,
+.service04-detail img,
+.service06-detail img {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    padding-right: 22px;
+}
+
+.service02,
+.service05,
+.service06 {
+    margin-top: 150px;
+}
+
+.service04 {
+    margin-top: 160px;
+}
+
+.tenpo01,
+.tenpo02 {
+    list-style: none;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 15px -10px;
+    transition: 0.5s;
+}
+
+.service02-position {
+    width: 80%;
+    margin: -80px 0 0 15%;
+}
+
+.service02-tenpo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 50px auto 0 auto;
+}
+
+.service02-tenpo01 {
+    padding-right: 8%;
+}
+
+.font28 {
+    line-height: 1em;
+}
+
+.font16 {
+    padding: 3px 0 0 8px;
+}
+
+.arrow::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+}
+
+.card__title {
+    margin: 7px auto 10px 7px;
+}
+
+.card-eng {
+    letter-spacing: 0em;
+    padding-left: 5px;
+}
+
+.card {
+    gap: 30px;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.arrow04::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #000000;
+    border-right: solid 2px #000000;
+    position: absolute;
+    top: 74%;
+    bottom: 0;
+    right: 12px;
+}
+
+.service04-position {
+    width: 80%;
+    margin: -80px 0 0 15%;
+}
+
+.service06-position {
+    width: 80%;
+    margin: -60px 0 0 15%;
+}
+
+.card__img-area img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.service05-link {
+    height: 200px;
+}
+
+.card__img-area05 img {
+    height: 200px;
+}
+
+.service05-tenpo {
+    width: 85%;
+    margin: -50px 0 0 50px;
+}
+
+.text-area05 p {
+    letter-spacing: 0em;
+}
+
+.text-area05 p {
+    padding: 10px
+}
+
+.text-area05 {
+    width: 32%;
+}
+
+.card05 h3 {
+    position: absolute;
+    left: 72%;
+    bottom: 15%;
+}
+
+.card__title05 {
+    letter-spacing: 0.1em;
+}
+
+.card05 p1 {
+    position: absolute;
+    bottom: 5%;
+    left: 72%
+}
+
+.arrow05::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    right: 20px;
+}
+
+.title-moji06 {
+    padding: 50px 0 80px 50px;
+}
+
+.btn06 a {
+    width: 180px;
+    letter-spacing: 0.1em;
+}
+
+.btn06 a::after {
+    right: 15px;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+}
+}
+
+@media screen and (max-width:480px) {
+.service01 {
+    margin-top: 30px;
+}
+
+.service02,
+.service03,
+.service04,
+.service05,
+.service06 {
+    margin-top: 130px;
+}
+
+.graph {
+        padding-top: 0%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+.service01-img {
+    width: 80%;
+    position: static;
+    margin-top: -50px;
+}
+
+.slide-dots01 {
+    margin: 2% 5% 0 5%;
+}
+
+.title-moji01 p,
+.title-moji02 p,
+.title-moji03 p,
+.title-moji04 p,
+.title-moji05 p,
+.title-moji06 p {
+    font-size: clamp(1rem, 0.667rem + 1.67vw, 2rem);
+}
+
+.title-moji01 h1,
+.title-moji03 h1,
+.title-moji04 h1,
+.title-moji05 h1 {
+    font-size: cclamp(1.875rem, 1.5rem + 1.88vw, 3rem);
+    font-weight: 600;
+}
+
+.title-moji02 h1,
+.title-moji06 h1 {
+    font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+.title-moji04 h1{
+    font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.1em;
+}
+
+.arrow {
+    margin-right: 0%;
+}
+
+.suuji p {
+    font-size: clamp(8rem, 5.458rem + 12.71vw, 15.625rem);
+}
+
+.service03-img {
+    width: 75%;
+    margin: -50px auto 0 0;
+    position: static;
+}
+
+.title-moji01,.title-moji02,.title-moji04,
+.title-moji06 {
+    padding: 40px 0 90px 20px;
+}
+
+.service03-flex {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.nav {
+    display: none !important;
+}
+
+.suuji {
+    position: absolute;
+    bottom: 60%;
+    right: 2%;
+}
+
+.service02-position,
+.service04-position,
+.service06-position{
+    margin: -80px 0 0 50px;
+}
+
+.service02-position,.service04-position,
+.service06-position {
+    width: 85%;
+}
+
+.service02-detail img,
+.service04-detail img,
+.service06-detail img {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.service02-tenpo {
+    margin: 40px auto 0 auto;
+}
+
+.service02-tenpo {
+    max-width: 80%;
+}
+
+.tenpo01,
+.tenpo02 {
+    list-style: none;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 15px -10px;
+    transition: 0.5s;
+}
+
+.tenpo-name {
+    display: flex;
+    font-family: "Noto Sans JP", serif;
+    padding:10px;
+}
+
+.font28 {
+    padding:10px 0;
+    line-height: 0rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.font16 {
+    margin-bottom: 0px;
+    padding: 5px 0 0 5px;
+    letter-spacing: 0.01em;
+}
+
+.service02-tenpo01 {
+    margin-bottom: 20px;
+}
+
+.arrow::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.service03-img {
+    width: 80%;
+    margin: -50px 0 0 0;
+}
+
+.card__title {
+    margin: 6px auto 5px 5px;
+    font-size: clamp(1.125rem, 1.042rem + 0.42vw, 1.375rem);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    line-height: 0.7em;
+}
+
+.nanao {
+    margin: 7px auto 5px 5px;
+    font-size: clamp(0.875rem, 0.708rem + 0.83vw, 1.375rem);
+    letter-spacing: 0em;
+    line-height: 0.8em;
+}
+
+.card-eng {
+    font-size: clamp(0.688rem, 0.646rem + 0.21vw, 0.813rem);
+    letter-spacing: 0em;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+
+.card__img-area img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.arrow04::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: solid 1.5px #000000;
+    border-right: solid 1.5px #000000;
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    right: 13px;
+    margin: auto;
+}
+
+.service04-detail p,.service06-detail p {
+    letter-spacing: 0.1em;
+}
+
+.flex {
+    display: flex;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.service05-tenpo {
+    width: 93%;
+    margin: -50px 0 0 15px;
+}
+
+.card__img-area05 img {
+    vertical-align: top;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card__img-area05 {
+    width: 57%;
+}
+
+.service05-link {
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 15px -10px;
+    transition: 0.5s;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.text-area05 {
+    width: 43%;
+}
+
+.text-area05 p {
+    letter-spacing: 0em;
+    padding: 10px 0 0 5px;
+    font-weight: 400;
+}
+
+.motogiku p {
+    word-break: auto-phrase;
+}
+
+.card05 h3 {
+    position: absolute;
+    left: 59%;
+    bottom: 16%;
+}
+
+.card__title05 {
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+.card05 p1 {
+    position: absolute;
+    bottom: 5%;
+    left: 59%;
+}
+
+.arrow05::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: solid 1.5px #000000;
+    border-right: solid 1.5px #000000;
+    position: absolute;
+    top: 65%;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+}
+
+.kanazawaya-moji {
+    bottom: 7%;
+    right: 2%;
+    font-weight: 600;
+}
+
+.service-title h1 {
+    margin-top: 0;
+}
+
+.header-img {
+    width: 30%;
+    margin: 0;
+    padding-left: 3%;
+    display: flex;
+}
+
+.graph {
+    display: none;
+}
+
+.btn06 a {
+    width: 200px;
+}
+}
+
+@media screen and (min-width:481px) {
+.card__title_sp {
+    display: none;
+}
+}
+
+@media screen and (min-width:961px) {
+#g-nav {
+    display: none !important;
+}
+
+.openbtn {
+    display: none !important;
+}
+
+.graph_sp {
+    display: none !important;
+}
+}
+
+@media screen and (max-width:960px) {
+.scrolldown4 {
+    position: absolute;
+    bottom: 1%;
+    left: 35px;
+    right: auto;
+    animation: arrowmove 1s ease-in-out infinite;
+}
+
+.nav {
+    display: none !important;
+}
+
+#g-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: #0f2350;
+    /*動き*/
+    transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+    top: 0;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(1rem, 0.917rem + 0.42vw, 1.25rem);
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/*×に変化*/
+.openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #000000;
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+}
+
+/* 03太陽光事業レスポンシブ */
+/* ================================================ */
+@media (min-width:550px) and (max-width:890px) {
+.graph-flex {
+    display: block;
+}
+
+.kyotensuu {
+    padding:10%
+}
+}
+
+@media screen and (max-width:549px) {
+.service03-position {
+    display: block;
+}
+
+.service03-detail {
+    display: none;
+}
+}
+
+@media screen and (min-width:550px) {
+.service03-detail_sp {
+        display: none;
+}
+}
+
+@media (min-width:550px) and (max-width:750px) {
+.service03-img {
+    width: 60%;
+    margin: -8% 0 0 0;
+}
+}
+
+@media screen and (max-width:750px) {
+.graph_sp {
+    object-fit: cover;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.graph_sp img {
+    text-align: center;
+}
+
+.service03-detail_sp {
+    list-style: none;
+}
+
+.srveice03-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.graph-flex {
+    justify-content: center;
+}
+
+.kyotensuu {
+    padding: 2%;
+}
+
+.engraph {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.service03-flex {
+    padding: 0;
+}
+}
+
+/* 04コインランドリー事業_680px以下でレスポンシブ */
+/* ======================================================================= */
+@media screen and (max-width:680px) {
+.card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+}
+
+/* 06金沢手ぶら観光事業_765px以下でレスポンシブ */
+/* ======================================================================= */
+
+@media (min-width:675px) and (max-width:824px) {
+.service06-img {
+    display: none;
+}
+
+.service06-img_sp {
+    width: 40%;
+    margin: -180px 0 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.service06-position {
+    width: 80%;
+    margin: -60px 0 0 10%;
+}
+}
+
+@media screen and (max-width:674px) {
+.service06-img_sp {
+    display: none;
+}
+
+.pc06 {
+    display: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.service06-img {
+    width: 80%;
+    position: static;
+    margin: 50px auto 0 0;
+}
+
+.sp06 {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+}
+
+@media screen and (min-width:675px) {
+.sp06 {
+    display: none;
+}
+}
+
+@media screen and (min-width:825px) {
+.service06-img_sp {
+    display: none;
+}
+}
+
+@media screen and (max-width:610px) {
+#table01 th,
+#table01 td {
+    padding: 22px 0px 22px 0;
+    border: none;
+    font-weight: 400;
+}
+
+#table01 th {
+    width: 36%;
+}
+}
+
+@media screen and (max-width:632px) {
+#splash {
+    letter-spacing: 0.2em;
+}
+}
+
+@media screen and (max-width:650px) {
+.service02-tenpo {
+    display: block;
+    max-width: 80%;
+}
+}
+
+@media screen and (max-width:340px) {
+.service06-position {
+    margin: -80px 0 0 30px;
+}
+
+.arrow04::before {
+    right: 8px;
+}
+
+#table01 th {
+    width: 35%;
+}
+
+.arrow::before {
+    right: 0;
+}
+}
+/*========================= レスポンシブ =======================*/
